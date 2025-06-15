@@ -1,0 +1,14 @@
+{
+  "name": "edge_marker",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && cp markers.yaml ../../dist/edge_marker/markers.yaml",
+    "test": "vitest run --coverage",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "yaml": "^2.8.0"
+  }
+}

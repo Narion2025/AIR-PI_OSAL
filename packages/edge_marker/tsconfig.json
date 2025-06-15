@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/edge_marker",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["test"]
+}
