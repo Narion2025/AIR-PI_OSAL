@@ -12,7 +12,24 @@ See `SPECS.md` for the detailed task breakdown and sprint plan. The current Kanb
 
 ## Getting Started
 1. Install dependencies using `pnpm install`.
-2. Run unit tests (if present) with `pnpm test`.
-3. Start services individually from each package.
+2. Run unit tests with `pnpm test`.
+3. Build the edge marker package with `pnpm --filter edge_marker build`.
+4. Start the local edge marker API via `pnpm --filter edge_marker start`.
+
+### Definition of Done for Edge-Spark
+The first sprint (**Edge-Spark**) focuses on the local marker engine. It is
+considered complete when:
+
+* `pnpm --filter edge_marker test` reports coverage above 90%.
+* Running `node dist/edge_marker/example.js "I am happy"` outputs a JSON
+  `MarkerPacket`.
+
+### Deploy to Render
+Deploy the edge marker API using the provided `render.yaml`:
+
+1. Create a new Web Service on [render.com](https://render.com) and link this
+   repository.
+2. Render will detect `render.yaml` and automatically build and start the
+   service.
 
 Environment variables are defined in `.env.example`.

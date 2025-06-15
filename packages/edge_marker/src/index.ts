@@ -1,3 +1,1 @@
-export function hello() {
-  return 'hello from edge_marker';
-}
+export { analyzeText, MarkerPacket } from './markerEngine';

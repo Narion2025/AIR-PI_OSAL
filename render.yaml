@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: edge-marker
+    env: node
+    plan: free
+    buildCommand: pnpm --filter edge_marker build
+    startCommand: pnpm --filter edge_marker start
+    rootDir: .
+    envVars:
+      - key: PORT
+        value: 3000
