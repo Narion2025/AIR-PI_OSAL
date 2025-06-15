@@ -1,0 +1,9 @@
+{
+  "id": "demo_01",
+  "timestamp": "2025-06-14T12:00:00Z",
+  "markers": {
+    "Freude": 0.45,
+    "Gruen_Community": 0.67
+  },
+  "ttl": 3600
+}
