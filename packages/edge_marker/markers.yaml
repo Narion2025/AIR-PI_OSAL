@@ -1,0 +1,5 @@
+markers:
+  joy:
+    regex: "\\b(happy|joy|delight)\\b"
+  anger:
+    regex: "\\b(angry|rage|fury)\\b"
