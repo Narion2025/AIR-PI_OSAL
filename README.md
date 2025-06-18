@@ -17,6 +17,7 @@ An example scenario is described in [docs/USE_CASE.md](docs/USE_CASE.md).
 3. Build the edge marker package with `pnpm --filter edge_marker build`.
 4. Start the local edge marker API via `pnpm --filter edge_marker start`.
 5. Start the gateway service with `pnpm --filter osal_gateway start`.
+6. Start the Heart API using `uvicorn heart_api.main:app --reload --port 8000`.
 
 ### Definition of Done for Edge-Spark
 The first sprint (**Edge-Spark**) focuses on the local marker engine. It is
@@ -39,5 +40,5 @@ Environment variables are defined in `.env.example`.
 ## Product Vision
 The Open Systemic Awareness Layer empowers applications to adapt to users' emotional context without compromising privacy. By keeping raw data on-device and only transmitting small, anonymized marker packets, OSAL enables ethical AI-driven experiences across education, therapy and civic tech.
 
-## Next Sprint: Heart-Beat
-The upcoming sprint focuses on implementing the `heart_api` service and the prompt adapter. This will allow stored marker packets to be converted into synergy vectors that guide the language model. Completing this sprint unlocks personalized LLM responses while maintaining strict privacy guarantees.
+## Next Sprint: First Light
+With the Heart-Beat sprint complete, the focus shifts to delivering the demo UI and deployment. The upcoming iteration will add a simple React interface displaying live markers and set up Render/Vercel to host the services publicly.

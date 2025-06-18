@@ -4,14 +4,11 @@ This Kanban board reflects the initial iteration (MVP1). Subsequent
 iterations can be adapted as needed for agile development.
 
 ## To Do
-- [ ] **D-01** Demo UI
 - [ ] **T-01** Smoke Tests
 - [ ] **DEP-01** Deployment scripts
 
 ## In Progress
-- [ ] **H-01** Heart API core service
-- [ ] **H-02** Prompt Adapter utility
-
+- [ ] **D-01** Demo UI
 ## Done
 _(move tasks here when acceptance criteria met)_
 - [x] **E-01** Repo & CI setup
@@ -19,3 +16,5 @@ _(move tasks here when acceptance criteria met)_
 - [x] **G-01** Gateway Skeleton service
 - [x] **G-02** Consent Capsule middleware
 - [x] **G-03** Differential Privacy Salt
+- [x] **H-01** Heart API core service
+- [x] **H-02** Prompt Adapter utility

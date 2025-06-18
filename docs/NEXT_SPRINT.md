@@ -1,10 +1,10 @@
-# Sprint 3: Heart-Beat
+# Sprint 4: First Light
 
-**Goal:** Convert stored marker packets into prompt vectors for the language model.
+**Goal:** Public demo with UI and deployment.**
 
 ### Planned Tasks
-- Implement the FastAPI-based `heart_api` service (`H-01`).
-- Create the Node prompt adapter utility (`H-02`).
-- Integrate smoke tests for the new components (`T-01` partial).
+- Build the Vite React demo UI (`D-01`).
+- Prepare deployment scripts for Render/Vercel (`DEP-01`).
+- Finalise smoke tests for end-to-end flow (`T-01`).
 
-Completion of this sprint enables personalised LLM responses based on anonymised emotional markers.
+This sprint will make the OSAL stack accessible online so stakeholders can experience the workflow live.
