@@ -35,3 +35,9 @@ Deploy the edge marker API using the provided `render.yaml`:
    service.
 
 Environment variables are defined in `.env.example`.
+
+## Product Vision
+The Open Systemic Awareness Layer empowers applications to adapt to users' emotional context without compromising privacy. By keeping raw data on-device and only transmitting small, anonymized marker packets, OSAL enables ethical AI-driven experiences across education, therapy and civic tech.
+
+## Next Sprint: Heart-Beat
+The upcoming sprint focuses on implementing the `heart_api` service and the prompt adapter. This will allow stored marker packets to be converted into synergy vectors that guide the language model. Completing this sprint unlocks personalized LLM responses while maintaining strict privacy guarantees.
