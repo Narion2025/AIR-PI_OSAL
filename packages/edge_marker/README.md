@@ -1,7 +1,6 @@
 # edge_marker
 
-Local marker engine for OSAL. It parses text and produces a privacy-friendly
-`MarkerPacket` JSON.
+Local marker engine for OSAL. It parses text and produces a privacy-friendly `MarkerPacket` JSON.
 
 ## Usage
 

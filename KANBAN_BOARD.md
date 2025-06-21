@@ -9,6 +9,7 @@ iterations can be adapted as needed for agile development.
 
 ## In Progress
 - [ ] **D-01** Demo UI
+
 ## Done
 _(move tasks here when acceptance criteria met)_
 - [x] **E-01** Repo & CI setup

@@ -5,3 +5,4 @@ coverage/
 .env
 *.log
 packages/*/coverage/
+__pycache__/

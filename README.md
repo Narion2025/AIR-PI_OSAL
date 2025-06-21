@@ -8,8 +8,7 @@ This repository contains the first iteration of the **Open Systemic Awareness La
 - `packages/heart_api` – FastAPI service computing prompt vectors
 - `packages/demo_ui` – Vite React demo application
 
-See `SPECS.md` for the detailed task breakdown and sprint plan. The current Kanban board is maintained in `KANBAN_BOARD.md`.
-An example scenario is described in [docs/USE_CASE.md](docs/USE_CASE.md).
+See `SPECS.md` for the detailed task breakdown and sprint plan. The current Kanban board is maintained in `KANBAN_BOARD.md`. An example scenario is described in [docs/USE_CASE.md](docs/USE_CASE.md).
 
 ## Getting Started
 1. Install dependencies using `pnpm install`.
@@ -19,23 +18,19 @@ An example scenario is described in [docs/USE_CASE.md](docs/USE_CASE.md).
 5. Start the gateway service with `pnpm --filter osal_gateway start`.
 6. Start the Heart API using `uvicorn heart_api.main:app --reload --port 8000`.
 
+Environment variables are defined in `.env.example`.
+
 ### Definition of Done for Edge-Spark
-The first sprint (**Edge-Spark**) focuses on the local marker engine. It is
-considered complete when:
+The first sprint (**Edge-Spark**) focuses on the local marker engine. It is considered complete when:
 
 * `pnpm --filter edge_marker test` reports coverage above 90%.
-* Running `node dist/edge_marker/example.js "I am happy"` outputs a JSON
-  `MarkerPacket`.
+* Running `node dist/edge_marker/example.js "I am happy"` outputs a JSON `MarkerPacket`.
 
 ### Deploy to Render
 Deploy the edge marker API using the provided `render.yaml`:
 
-1. Create a new Web Service on [render.com](https://render.com) and link this
-   repository.
-2. Render will detect `render.yaml` and automatically build and start the
-   service.
-
-Environment variables are defined in `.env.example`.
+1. Create a new Web Service on [render.com](https://render.com) and link this repository.
+2. Render will detect `render.yaml` and automatically build and start the service.
 
 ## Product Vision
 The Open Systemic Awareness Layer empowers applications to adapt to users' emotional context without compromising privacy. By keeping raw data on-device and only transmitting small, anonymized marker packets, OSAL enables ethical AI-driven experiences across education, therapy and civic tech.

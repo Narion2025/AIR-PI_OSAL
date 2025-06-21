@@ -9,15 +9,18 @@ with open(BASE / 'data/cross_links.json') as f:
 with open(BASE / 'data/marker_weights.json') as f:
     WEIGHTS = json.load(f)
 
+
 class MarkerPacket(BaseModel):
     id: str
     markers: dict[str, float]
     ttl: int | None = 3600
 
+
 class PromptVector(BaseModel):
     synergy: float
     vector: list[float]
     target_sd: str
+
 
 def compute_vector(markers: dict[str, float]) -> PromptVector:
     dim = len(next(iter(CROSS.values())))
@@ -31,11 +34,14 @@ def compute_vector(markers: dict[str, float]) -> PromptVector:
         synergy += value * weight
     return PromptVector(synergy=synergy, vector=vector, target_sd="generic")
 
+
 app = FastAPI()
+
 
 @app.get('/status')
 def status():
     return {'status': 'ok'}
+
 
 @app.post('/vector')
 def vector(pkt: MarkerPacket) -> PromptVector:
