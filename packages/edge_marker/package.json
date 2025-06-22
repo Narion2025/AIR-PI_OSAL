@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "test": "echo 'no tests'"
+    "build": "tsc -b",
+    "test": "vitest run"
   }
 }

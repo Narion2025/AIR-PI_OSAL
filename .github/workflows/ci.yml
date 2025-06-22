@@ -19,5 +19,7 @@ jobs:
     - run: |
         corepack enable
         pnpm install --frozen-lockfile || true
-        pip install fastapi pytest
-    - run: pnpm test --if-present
+        pip install -r requirements.txt
+    - run: pnpm lint
+    - run: pnpm test && pytest
+    - run: pnpm build
